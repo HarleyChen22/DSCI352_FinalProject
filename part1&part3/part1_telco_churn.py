@@ -1,5 +1,5 @@
 """
-Starter File – Telco Customer Churn (Keras + Sklearn + Optional AWS)
+Starter File - Telco Customer Churn (Keras + Sklearn + Optional AWS)
 
 This is a starter script for your final project.
 
@@ -68,7 +68,7 @@ ENABLE_AWS_EXPORT = True
 
 
 # Data Loading and helpers (given to you)
-def load_telco(path: str) -> pd.DataFrame:
+def load_telco(path):
     """
     Load the Telco CSV and perform basic cleaning:
       - Convert TotalCharges to numeric (coerce errors to NaN).
@@ -85,7 +85,7 @@ def load_telco(path: str) -> pd.DataFrame:
     return df
 
 
-def build_preprocessor(df: pd.DataFrame):
+def build_preprocessor(df):
     """
     Build a ColumnTransformer that:
       - Applies a numeric pipeline to numeric columns.
@@ -195,7 +195,7 @@ class GradientTracker(keras.callbacks.Callback):
 
 # ##################
 # Keras Model – TODO (Done)
-def build_keras_model(input_dim: int):
+def build_keras_model(input_dim):
     """
     TODO:
     Build and compile a Keras model that takes as input a vector of length `input_dim`
